@@ -21,6 +21,7 @@ defmodule Xfootbot.Router do
 
     # Add these two lines
   use FacebookMessenger.Phoenix.Router
+  
   facebook_routes "/api/webhook", Xfootbot.WebHookController
 
   # Other scopes may use custom stacks.

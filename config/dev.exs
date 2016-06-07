@@ -42,5 +42,5 @@ config :xfootbot, Xfootbot.Repo,
   pool_size: 10
 
 config :facebook_messenger,
-  facebook_page_token: "PAGE_TOKEN",
-  challenge_verification_token: "123123"
+  facebook_page_token: System.get_env("PAGE_TOKEN"),
+  challenge_verification_token: System.get_env("VERIFY_TOKEN")

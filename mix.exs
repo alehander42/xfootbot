@@ -37,7 +37,7 @@ defmodule Xfootbot.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
      {:cowboy, "~> 1.0"},
-     {:phoenix_facebook_messenger, "~> 0.1.0"}]
+     {:phoenix_facebook_messenger, git: "https://github.com/alehander42/phoenix_facebook_messenger.git"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.
