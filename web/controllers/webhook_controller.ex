@@ -5,6 +5,7 @@ defmodule Xfootbot.WebHookController do
   def message_received(msg) do
     text = FacebookMessenger.Response.message_texts(msg) |> hd
     sender = FacebookMessenger.Response.message_senders(msg) |> hd
-    FacebookMessenger.Sender.send(sender, text)
+    response = String.split(text, "") |> Enum.join("\n")
+    FacebookMessenger.Sender.send(sender, response)
   end
 end
